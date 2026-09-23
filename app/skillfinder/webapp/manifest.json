@@ -1,0 +1,16 @@
+{
+  "_version":"1.65.0",
+  "sap.app":{"id":"skillfinder","type":"application","title":"SkillFinder","applicationVersion":{"version":"1.0.0"}},
+  "sap.ui":{"technology":"UI5","deviceTypes":{"desktop":true,"tablet":true,"phone":true}},
+  "sap.ui5":{
+    "dependencies":{"minUI5Version":"1.120.0","libs":{"sap.ui.core":{},"sap.m":{},"sap.f":{},"sap.ui.layout":{}}},
+    "models":{"i18n":{"type":"sap.ui.model.resource.ResourceModel","settings":{"bundleName":"skillfinder.i18n.i18n"}}},
+    "rootView":{"viewName":"skillfinder.view.App","type":"XML","async":true,"id":"app"},
+    "resources":{"css":[{"uri":"css/style.css"}]},
+    "routing":{"config":{"routerClass":"sap.m.routing.Router","viewType":"XML","viewPath":"skillfinder.view","controlId":"app","controlAggregation":"pages","async":true},
+      "routes":[
+        {"pattern":"","name":"login","target":"login"},{"pattern":"user","name":"userDashboard","target":"userDashboard"},{"pattern":"profile","name":"profile","target":"profile"},{"pattern":"skills","name":"skills","target":"skills"},{"pattern":"experiences","name":"experiences","target":"experiences"},{"pattern":"educations","name":"educations","target":"educations"},{"pattern":"certifications","name":"certifications","target":"certifications"},{"pattern":"languages","name":"languages","target":"languages"},{"pattern":"cv","name":"cvPreview","target":"cvPreview"},{"pattern":"admin","name":"adminDashboard","target":"adminDashboard"},{"pattern":"search","name":"advancedSearch","target":"advancedSearch"}],
+      "targets":{"login":{"viewName":"Login"},"userDashboard":{"viewName":"user.UserDashboard"},"profile":{"viewName":"user.Profile"},"skills":{"viewName":"user.Skills"},"experiences":{"viewName":"user.Experiences"},"educations":{"viewName":"user.Educations"},"certifications":{"viewName":"user.Certifications"},"languages":{"viewName":"user.Languages"},"cvPreview":{"viewName":"user.CVPreview"},"adminDashboard":{"viewName":"admin.AdminDashboard"},"advancedSearch":{"viewName":"admin.AdvancedSearch"}}
+    }
+  }
+}

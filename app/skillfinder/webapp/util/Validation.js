@@ -1,0 +1,1 @@
+sap.ui.define([],()=>({required:v=>String(v||"").trim().length>0,email:v=>/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)}));

@@ -1,0 +1,1 @@
+sap.ui.define(["skillfinder/controller/CrudController"],C=>C.extend("skillfinder.controller.user.Languages",{entity:"Languages",route:"languages",empty:{name:"",level:"Professionnel"}}));

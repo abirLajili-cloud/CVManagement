@@ -1,0 +1,1 @@
+sap.ui.define([], function(){"use strict";return {statusState:function(v){return v?"Success":"Error";},empty:function(v){return v||"-";}};});

@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/model/json/JSONModel"], function(JSONModel) { "use strict"; return { createSessionModel: function(){ return new JSONModel({authenticated:false,user:null,credentials:sessionStorage.getItem("sf.credentials")||""}); } }; });

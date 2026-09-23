@@ -1,0 +1,1 @@
+sap.ui.define(["skillfinder/controller/CrudController"],C=>C.extend("skillfinder.controller.user.Skills",{entity:"Skills",route:"skills",empty:{name:"",level:"Intermediaire",experienceYears:0}}));

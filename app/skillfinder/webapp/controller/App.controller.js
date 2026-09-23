@@ -1,0 +1,1 @@
+sap.ui.define(["skillfinder/controller/BaseController"],B=>B.extend("skillfinder.controller.App",{}));

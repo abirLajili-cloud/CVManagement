@@ -1,0 +1,29 @@
+{
+  "name": "skillfinder",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SkillFinder - CAP Node.js and SAPUI5 application",
+  "scripts": {
+    "start": "cds-serve",
+    "watch": "cds watch",
+    "deploy": "cds deploy --to sqlite"
+  },
+  "dependencies": {
+    "@sap/cds": "^9"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^2"
+  },
+  "cds": {
+    "requires": {
+      "db": { "kind": "sqlite", "credentials": { "url": "db.sqlite" } },
+      "auth": {
+        "kind": "mocked",
+        "users": {
+          "admin@skillfinder.local": { "password": "Admin123!", "roles": ["authenticated-user", "Admin"] },
+          "user@skillfinder.local": { "password": "User123!", "roles": ["authenticated-user", "User"] }
+        }
+      }
+    }
+  }
+}

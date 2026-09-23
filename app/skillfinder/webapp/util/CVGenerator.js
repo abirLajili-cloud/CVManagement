@@ -1,0 +1,1 @@
+sap.ui.define([],()=>({download:function(name,content){const b=new Blob([content],{type:"application/json;charset=utf-8"});const a=document.createElement("a");a.href=URL.createObjectURL(b);a.download=name||"CV.json";a.click();URL.revokeObjectURL(a.href);}}));

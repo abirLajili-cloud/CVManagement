@@ -1,0 +1,1 @@
+sap.ui.define([],()=>({SERVICE:"/odata/v4/skillfinder",ROLES:{ADMIN:"ADMIN",USER:"USER"}}));
